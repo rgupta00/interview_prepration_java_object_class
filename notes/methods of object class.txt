@@ -1,0 +1,32 @@
+Object class in Java
+======================
+The Object class is the parent class of all the classes in java by default. In other words, it is the topmost class of java.
+
+The Object class is beneficial if you want to refer any object whose type you don't know. Notice that parent class reference variable can refer the child class object, know as upcasting.
+
+
+public class java.lang.Object {
+  public java.lang.Object();
+  public native int hashCode();
+  public boolean equals(java.lang.Object);
+  public java.lang.String toString();
+  
+  //final vs finally vs finalize()
+  
+  protected void finalize() throws java.lang.Throwable;
+  
+ 
+  public final native java.lang.Class<?> getClass();// used in java refl to get information about meta data of the class at run!
+  
+  
+  protected native java.lang.Object clone() throws java.lang.CloneNotSupportedException;
+  
+  
+  
+  public final native void notify();
+  public final native void notifyAll();
+  public final void wait() throws java.lang.InterruptedException;
+  public final native void wait(long) throws java.lang.InterruptedException;
+  public final void wait(long, int) throws java.lang.InterruptedException;
+  
+}
